@@ -3,10 +3,7 @@
  */
 public class Funcion {
 
-    private double x;
-
-    public Funcion(){
-
+    public Funcion() {
     }
 
     public double evaluar(double x1){
