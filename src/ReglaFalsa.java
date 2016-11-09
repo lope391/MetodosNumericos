@@ -38,6 +38,7 @@ public class ReglaFalsa {
                         double evalXm = f.evaluar(xm);
                         double err = tol + 1;
                         int cont = 1;
+                        System.out.println("It: " + 0 +  " - Xi: " + xi + "--- Xf: " + xf + " --- Err: ");
 
                         while(evalXm != 0 && err > tol && cont < iter){
 
@@ -57,6 +58,7 @@ public class ReglaFalsa {
                             xm = xi - (evalXi*(xi-xf))/(evalXi - evalXf);
                             evalXm = f.evaluar(xm);
                             err = Math.abs(xm-xAnt);
+                            System.out.println("It: " + cont +  " - Xi: " + xi + "--- Xf: " + xf + " --- Err: " + err);
                             cont++;
                         }
 
